@@ -156,3 +156,45 @@ IT'S ALIVE!!!
 
 ![image](https://github.com/user-attachments/assets/403c1e72-7e73-463e-b7e3-278ed2bda177)
 
+22. `sudo docker compose down`
+
+Полностью стопим Grafana
+
+![image](https://github.com/user-attachments/assets/3e24f915-16f9-4bba-8143-dde34c7814e7)
+
+PROMITEUS
+
+23. `sudo git clone https://github.com/0minty/Grafana-Install.git`
+
+Нагло копируем конфиг и потом с помощью `ls` смотрим все ли у нас поставилось
+
+24. `cp docker-compose.yaml /home/ваш пользователь/grafana_stack_for_docker/`
+
+Копируем конфиг Docker в папку Grafana
+
+![image](https://github.com/user-attachments/assets/207ff0f7-e96f-4261-972a-b65cf6c1176b)
+
+25. `cp prometeus.yaml /home/ваш пользователь/grafana_stack_for_docker/`
+
+С Prometeus делаем то же самое
+
+![image](https://github.com/user-attachments/assets/d1508368-1a92-4c7c-b0a3-d3a82760aef7)
+
+26. `mv prometheus.yaml /mnt/common_volume/swarm/grafana/config`
+
+Переносим конфигурационный файл prometheus.yaml в конфиг Grafana
+
+27. `ls`
+
+Смотрим все ли у нас поставилось куда надо 
+
+![image](https://github.com/user-attachments/assets/cd1d6cfa-c7f9-478b-b0bf-919982f94833)
+
+27. `sudo docker compose up -d`
+
+Запускаем Docker на фоне 
+
+![image](https://github.com/user-attachments/assets/bf28b6e3-8aa3-4ac8-8e1d-1a91945363ff)
+
+
+
