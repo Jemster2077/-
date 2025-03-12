@@ -36,6 +36,7 @@
 ![image](https://github.com/user-attachments/assets/e78faf4b-060c-4784-9caf-429cc2f13d84)
 
 5. `sudo yum install curl`
+
    
 Cмотрим есть ли у нас пакетик curl
 
@@ -239,3 +240,10 @@ http://prometheus:9090
 30. В пункт `Find and import dashboards for common applications at grafana.com/dashboards`: пишем 1860
 
 ![image](https://github.com/user-attachments/assets/0db8a1d9-26ae-48da-b50a-acaf3fbb3a8e)
+
+Тыкаем на кнопку Load
+
+Select Prometheus тыкаем на кнопку "Import"
+
+В итоге открывается такой Dashboard для мониторинга загрузки ОС
+
