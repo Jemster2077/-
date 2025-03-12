@@ -196,5 +196,46 @@ PROMITEUS
 
 ![image](https://github.com/user-attachments/assets/bf28b6e3-8aa3-4ac8-8e1d-1a91945363ff)
 
+28. Переходим на сайт `localhost:3000`
 
+Пользователь и Пароль GRAFANA: `admin`
 
+Код графаны: `3000`
+
+Код прометеуса: `http://prometheus:9090`
+
+В меню выбираем вкладку Dashboards и создаем Dashboard
+
+Нажимаем кнопку +Добавить визуализацию, а затем «Настроить новый источник данных»
+
+Выбираем Prometheus
+
+![image](https://github.com/user-attachments/assets/ecdd34f3-d84c-454f-b33e-f034d4ce8328)
+
+Заполняем данные в открывшемся окне
+
+Пункт Connection
+
+http://prometheus:9090
+
+Пункт Authentication
+
+Базовая аутентификация
+
+Пользователь: admin
+
+Пароль: admin
+
+Нажимаем на Save & test и должно показывать зелёную галочку
+
+![image](https://github.com/user-attachments/assets/db4d0fa9-d6f0-458f-80b8-e73f5d9b3b2f)
+
+29. В меню выбираем вкладку Dashboards и создаем Dashboard
+
+Тыкаем на кнопку "Import dashboard"
+
+![image](https://github.com/user-attachments/assets/c879a399-0c2c-4de0-b009-82f6e91fedc8)
+
+30. В пункт `Find and import dashboards for common applications at grafana.com/dashboards`: пишем 1860
+
+![image](https://github.com/user-attachments/assets/0db8a1d9-26ae-48da-b50a-acaf3fbb3a8e)
