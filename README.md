@@ -86,6 +86,34 @@ Cмотрим какая у нас версия Docker Compose.
 
 13. `sudo chown -R $(id -u):$(id -g) {/mnt/common_volume/swarm/grafana/config,/mnt/common_volume/grafana}`
 
-НАгло присваиваем себе право владения на эту штуку
+Нагло присваиваем себе право владения на эту штуку
 
 ![image](https://github.com/user-attachments/assets/5dd83713-e509-4247-bcc9-b1934c49e9e9)
+
+14. `touch /mnt/common_volume/grafana/grafana-config/grafana.ini`
+
+Делаем конфиг файл 
+
+![image](https://github.com/user-attachments/assets/35d104b9-e5ec-4c9d-b927-349e030d5a25)
+
+15. `cp config/* /mnt/common_volume/swarm/grafana/config/`
+
+Копируем все файлы из папки config в /mnt/common_volume/swarm/grafana/config/
+
+![image](https://github.com/user-attachments/assets/35e80b04-530f-4bd6-89c2-f73ac7aa8358)
+
+16. `mv grafana.yaml docker-compose.yaml`
+
+Переименовываем файл grafana.yaml в docker-compose.yaml
+
+![image](https://github.com/user-attachments/assets/71c5bdfa-abb4-481c-b280-40bae62f0a39)
+
+17. `sudo docker compose up -d`
+
+Запускаем эту лошадку (надо будет подождать)
+
+![image](https://github.com/user-attachments/assets/1c0b265f-dd51-48e6-8a86-37676a2e3b35)
+
+![image](https://github.com/user-attachments/assets/1b1d3a43-fdf5-4a03-91a8-74a170e7f3b1)
+
+IT'S ALIVE!!!
