@@ -117,3 +117,42 @@ Cмотрим какая у нас версия Docker Compose.
 ![image](https://github.com/user-attachments/assets/1b1d3a43-fdf5-4a03-91a8-74a170e7f3b1)
 
 IT'S ALIVE!!!
+
+18. Бежим в Файерфокс и идем по адресу `localhost:3000`
+
+![image](https://github.com/user-attachments/assets/27b2f843-f8e8-4a6f-a5dd-403e77c43f2c)
+
+Там вводим логин с паролем 
+
+Логин `admin`
+
+Пароль `admin`
+
+И там мы попадем на домашнюю страницу
+
+![image](https://github.com/user-attachments/assets/169ef731-1bde-4edd-a8a5-fd35f22eb076)
+
+19. `vi docker-compose.yaml`
+
+Заходим в кофиг Docker 
+
+![image](https://github.com/user-attachments/assets/6296c1b9-f821-4bad-96e9-ed5dbb82df97)
+
+![image](https://github.com/user-attachments/assets/18a7b698-d341-49d9-88fd-e35bc2c6d19e)
+
+![image](https://github.com/user-attachments/assets/6aff9d9c-017c-45af-a2c3-869fafdb9caf)
+
+Чтобы выйти отсюда вводим команду `:wq`
+
+20. `sudo docker compose up -d`
+
+Запускаем Grafana
+
+![image](https://github.com/user-attachments/assets/f2da311f-13f0-4b37-ac8a-a16d42921888)
+
+21. `sudo docker compose stop`
+
+Стопим Grafana
+
+![image](https://github.com/user-attachments/assets/403c1e72-7e73-463e-b7e3-278ed2bda177)
+
